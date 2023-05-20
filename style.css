@@ -1,0 +1,199 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+:root {
+  font-size: 62.5%;
+  --background: #171717;
+  --text: #ffffff;
+  --gray-600: #959393;
+  --font-roboto: "Roboto", sans-serif;
+  --font-bebas: "Bebas Neue", cursive;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  font-family: var(--font-roboto);
+  background-color: var(--background);
+  color: var(--text);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.container {
+  width: min(100% - 3rem, 1200px);
+  margin-inline: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+nav .logo a {
+  text-align: center;
+}
+
+nav .logo img {
+  width: 20rem;
+}
+
+main {
+  text-align: center;
+}
+
+.main-site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-site span {
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 30px;
+  color: var(--gray-600);
+}
+
+.main-site h1 {
+  font-family: var(--font-bebas);
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 70px;
+  letter-spacing: 10px;
+  margin: 2rem;
+}
+
+.main-site .paragraph {
+  line-height: 24px;
+  color: var(--gray-600);
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.main-site img {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 70px;
+  letter-spacing: -0.7px;
+}
+
+.depositions .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.depositions .cards .card-dep {
+  flex: 1 1 300px;
+  width: 350px;
+  background: #212121;
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.08),
+    0px 0.5px 2px rgba(96, 97, 112, 0.16);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.depositions .cards .card-dep p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 24px;
+  text-align: center;
+  color: #5d6f88;
+}
+
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.container-social {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+.media-link {
+  margin-left: 3rem;
+  padding: 2rem;
+  font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+  .main-site h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+  }
+
+  .main-site span {
+    font-size: 2rem;
+  }
+
+  .main-site .paragraph {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 2.8rem;
+  }
+
+  .media-link {
+    font-size: 2rem;
+  }
+}
