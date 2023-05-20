@@ -1,12 +1,14 @@
 body{
     background:#171717;
   }
+
   #slider{
     width:80%;
     margin:0 auto;
     position:relative;
     overflow:hidden;
     box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+    border-radius: 5px;
   }
   
   .slide{
@@ -14,11 +16,12 @@ body{
     display:none;
     animation-name:fade;
     animation-duration:1s;
-    
   }
+
   img{
    width:100%; 
   }
+
   @keyframes fade{
     from{opacity:0.5;}
     to{opacity:1;}
@@ -71,13 +74,14 @@ body{
   @media (max-width:576px){
     #slider{width:100%;
     
-    }
-    
-    .controls{
-      font-size:1em;
-    }
-    
-    #dots-con{
-      display:none;
-    }
   }
+    
+  .controls{
+    font-size:1em;
+  }
+    
+  #dots-con{
+    display:none;
+  }
+  
+}
